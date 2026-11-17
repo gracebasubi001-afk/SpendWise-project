@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise - Budget Management</title>
+
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="./SpendWise - Budget Management_files/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>SpendWise</h1>
+        <p>Smart Budget Management System</p>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h2>Welcome to SpendWise!</h2>
+            <p>Manage your budget, track expenses and make better financial decisions.</p>
+            <button id="startButton">Start Budget Calculation</button>
+        </section>
+
+        <section class="dashboard">
+
+            <div class="card">
+                <h3>Monthly Budget</h3>
+                <p id="budget">KES 20000</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Expenses</h3>
+                <p id="expenses">KES 16000</p>
+            </div>
+
+            <div class="card">
+                <h3>Remaining Balance</h3>
+                <p id="balance">KES 4000</p>
+            </div>
+
+        </section>
+
+        <section class="expense-section">
+            <h2>Expense Breakdown</h2>
+
+            <ul>
+                <li>Food: <span id="food">KES 4000</span></li>
+                <li>Transport: <span id="transport">KES 2000</span></li>
+                <li>Rent: <span id="rent">KES 6000</span></li>
+                <li>Entertainment: <span id="entertainment">KES 1000</span></li>
+                <li>Savings: <span id="savings">KES 2000</span></li>
+                <li>Utilities: <span id="utilities">KES 1000</span></li>
+            </ul>
+        </section>
+
+        <section class="results">
+            <h2>Budget Report</h2>
+            <p id="message">Great! You have KES 4000 remaining in your budget.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 SpendWise. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link JavaScript file -->
+    <script src="./SpendWise - Budget Management_files/script.js.download"></script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>

@@ -1,0 +1,161 @@
+
+/* General page styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: #123c32;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+/* Main container */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* Welcome section */
+
+.welcome {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.welcome h2 {
+    color: #123c32;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #16845b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0d6342;
+}
+
+/* Dashboard cards */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #123c32;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #16845b;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Expense section */
+
+.expense-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.expense-section h2 {
+    color: #123c32;
+    margin-bottom: 15px;
+}
+
+.expense-section ul {
+    list-style: none;
+}
+
+.expense-section li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Results section */
+
+.results {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.results h2 {
+    color: #123c32;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #123c32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive design */
+
+@media (max-width: 700px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        width: 94%;
+    }
+}
+

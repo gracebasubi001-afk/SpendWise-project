@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise - Budget Management</title>
+
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>SpendWise</h1>
+        <p>Smart Budget Management System</p>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h2>Welcome to SpendWise!</h2>
+            <p>Manage your budget, track expenses and make better financial decisions.</p>
+            <button id="startButton">Start Budget Calculation</button>
+        </section>
+
+        <section class="dashboard">
+
+            <div class="card">
+                <h3>Monthly Budget</h3>
+                <p id="budget">KES 0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Expenses</h3>
+                <p id="expenses">KES 0</p>
+            </div>
+
+            <div class="card">
+                <h3>Remaining Balance</h3>
+                <p id="balance">KES 0</p>
+            </div>
+
+        </section>
+
+        <section class="expense-section">
+            <h2>Expense Breakdown</h2>
+
+            <ul>
+                <li>Food: <span id="food">KES 0</span></li>
+                <li>Transport: <span id="transport">KES 0</span></li>
+                <li>Rent: <span id="rent">KES 0</span></li>
+                <li>Entertainment: <span id="entertainment">KES 0</span></li>
+                <li>Savings: <span id="savings">KES 0</span></li>
+                <li>Utilities: <span id="utilities">KES 0</span></li>
+            </ul>
+        </section>
+
+        <section class="results">
+            <h2>Budget Report</h2>
+            <p id="message">Click the button to calculate your budget.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SpendWise. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
